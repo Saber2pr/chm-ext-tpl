@@ -1,7 +1,7 @@
 let x = 0
 let y = 0
 
-window.addEventListener('mousemove', event => {
+window.addEventListener('contextmenu', event => {
   x = event.clientX
   y = event.clientY
 })
