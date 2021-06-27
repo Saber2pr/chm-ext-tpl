@@ -6,6 +6,9 @@ window.addEventListener('mousemove', event => {
   y = event.clientY
 })
 
+/**
+ * @returns {HTMLElement}
+ */
 const getClickElement = () => document.elementFromPoint(x, y)
 
 onMessage(data => {
