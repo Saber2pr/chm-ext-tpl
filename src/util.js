@@ -5,4 +5,4 @@ const sendMessage = data => new Promise(resolve =>
 
 const onMessage = (callback) =>
   chrome.runtime.onMessage
-    .addListener((data, sender, sendResponse) => sendResponse(callback(data, sender)))
+    .addListener(async (data, sender, sendResponse) => sendResponse(await callback(data, sender)))
